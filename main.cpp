@@ -61,7 +61,7 @@ int main()
 	for (int i = 1; i < howManyDupe; i++)
 	{
 		std::string zBarrierOld = format[zBarrierIdx];
-		std::string chestOld = format[zBarrierIdx];
+		std::string chestOld = format[chestIdx];
 		format[zBarrierIdx].replace(27, 1, std::to_string(i));
 		format[chestIdx].replace(27, 1, std::to_string(i));
 		std::ofstream fout(path + "/box_" + (i < 10 ? "0" + std::to_string(i) : std::to_string(i)) + ".map");
