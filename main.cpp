@@ -58,7 +58,7 @@ int main()
 		return 0;
 	}
 
-	for (int i = 1; i < howManyDupe; i++)
+	for (int i = 1; i <= howManyDupe; i++)
 	{
 		std::string zBarrierOld = format[zBarrierIdx];
 		std::string chestOld = format[chestIdx];
